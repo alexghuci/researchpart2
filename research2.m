@@ -1,6 +1,8 @@
 clear;
 clc;
 clf;
+A
+function A
 filename = uigetfile('*.*', 'Select File');
 A = load(filename);
 x = A.sig_405_RS;
@@ -23,3 +25,4 @@ xy = categorical({'Control','GCAMP','GCAMP-control'});
 ht=[int,Int,diff];
 bar(xy,ht)
 ylabel("area")
+end
